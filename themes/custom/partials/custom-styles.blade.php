@@ -40,4 +40,3 @@
         margin-inline-end: 0;
     }
 </style>
-./configure --with-php-config=/www/server/php/74/bin/php-config
