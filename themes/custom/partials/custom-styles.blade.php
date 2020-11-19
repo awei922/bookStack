@@ -9,19 +9,35 @@
         --color-page-draft: {{ setting('page-draft-color')}};
     }
 
-    /* Layout */
-    .container,
-    .tri-layout-container {
-        max-width: 1080px;
-        margin: 0 auto;
+
+    @media screen and (min-width: 1100px) {
+        /* Layout */
+        .container,
+        .tri-layout-container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding-inline-start: 0;
+            padding-inline-end: 0;
+        }
+
+        /* Content */
+        header .links a {
+            padding-right: 0;
+        }
+
+        .tri-layout-left-contents, .tri-layout-right-contents {
+            padding: 0;
+        }
     }
+
 
     /* Breadcrumbs */
     .breadcrumbs .icon-list-item,
     .breadcrumbs .breadcrumb-listing .breadcrumb-listing-toggle,
-    .breadcrumbs .entity-list-item > span:first-child, .icon-list-item > span:first-child {
+    .breadcrumbs .icon-list-item > span:first-child {
         padding-left: 0;
         padding-right: 0;
         margin-inline-end: 0;
     }
 </style>
+./configure --with-php-config=/www/server/php/74/bin/php-config
