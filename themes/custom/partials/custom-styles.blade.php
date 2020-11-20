@@ -35,6 +35,9 @@
     code {
         font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace !important;
     }
+    .CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like{
+        white-space:pre-wrap;
+    }
 
     /* Breadcrumbs */
     .breadcrumbs .icon-list-item,
