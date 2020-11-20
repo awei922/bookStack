@@ -30,6 +30,11 @@
         }
     }
 
+    /* Typography */
+    pre,
+    code {
+        font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace !important;
+    }
 
     /* Breadcrumbs */
     .breadcrumbs .icon-list-item,
@@ -40,3 +45,5 @@
         margin-inline-end: 0;
     }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/theme/zenburn.min.css"/>
+<script>window.codeTheme='zenburn';</script>
