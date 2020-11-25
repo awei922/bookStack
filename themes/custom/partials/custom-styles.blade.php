@@ -9,28 +9,10 @@
         --color-page-draft: {{ setting('page-draft-color')}};
     }
 
-
-    @media screen and (min-width: 1100px) {
-        /* Layout */
-        .container,
-        .tri-layout-container {
-            max-width: 1080px;
-            margin: 0 auto;
-            padding-inline-start: 0;
-            padding-inline-end: 0;
-        }
-
-        /* Content */
-        header .links a {
-            padding-right: 0;
-        }
-
-        .tri-layout-left-contents, .tri-layout-right-contents {
-            padding: 0;
-        }
-    }
-
     /* Typography */
+    body{
+        font-size: 16px;
+    }
     pre,
     code {
         font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace !important;
@@ -39,14 +21,20 @@
         white-space:pre-wrap;
     }
 
-    /* Breadcrumbs */
-    .breadcrumbs .icon-list-item,
-    .breadcrumbs .breadcrumb-listing .breadcrumb-listing-toggle,
-    .breadcrumbs .icon-list-item > span:first-child {
-        padding-left: 0;
-        padding-right: 0;
-        margin-inline-end: 0;
+    /*Icon*/
+    svg[data-icon="chapter"]{
+        font-size: 1.666em;
+        fill: #ef7c3c;
+    }
+    svg[data-icon="page"]{
+        font-size: 1rem;
+        fill: #0288D1;
+    }
+    .book-tree svg{
+        display: none;
+    }
+    /*Content*/
+    .inset-list{
+        display: block;
     }
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/theme/zenburn.min.css"/>
-<script>window.codeTheme='zenburn';</script>
