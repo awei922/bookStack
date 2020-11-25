@@ -53,27 +53,27 @@
 
 @section('left')
 
-    {{--@if($shelf->tags->count() > 0)--}}
-        {{--<div id="tags" class="mb-xl">--}}
-            {{--@include('components.tag-list', ['entity' => $shelf])--}}
-        {{--</div>--}}
-    {{--@endif--}}
+    @if($shelf->tags->count() > 0)
+        <div id="tags" class="mb-xl">
+            @include('components.tag-list', ['entity' => $shelf])
+        </div>
+    @endif
 
-    {{--<div id="details" class="mb-xl">--}}
-        {{--<h5>{{ trans('common.details') }}</h5>--}}
-        {{--<div class="text-small text-muted blended-links">--}}
-            {{--@include('partials.entity-meta', ['entity' => $shelf])--}}
-            {{--@if($shelf->restricted)--}}
-                {{--<div class="active-restriction">--}}
-                    {{--@if(userCan('restrictions-manage', $shelf))--}}
-                        {{--<a href="{{ $shelf->getUrl('/permissions') }}">@icon('lock'){{ trans('entities.shelves_permissions_active') }}</a>--}}
-                    {{--@else--}}
-                        {{--@icon('lock'){{ trans('entities.shelves_permissions_active') }}--}}
-                    {{--@endif--}}
-                {{--</div>--}}
-            {{--@endif--}}
-        {{--</div>--}}
-    {{--</div>--}}
+    <div id="details" class="mb-xl">
+        <h5>{{ trans('common.details') }}</h5>
+        <div class="text-small text-muted blended-links">
+            @include('partials.entity-meta', ['entity' => $shelf])
+            @if($shelf->restricted)
+                <div class="active-restriction">
+                    @if(userCan('restrictions-manage', $shelf))
+                        <a href="{{ $shelf->getUrl('/permissions') }}">@icon('lock'){{ trans('entities.shelves_permissions_active') }}</a>
+                    @else
+                        @icon('lock'){{ trans('entities.shelves_permissions_active') }}
+                    @endif
+                </div>
+            @endif
+        </div>
+    </div>
 
     {{--@if(count($activity) > 0)--}}
         {{--<div class="mb-xl">--}}

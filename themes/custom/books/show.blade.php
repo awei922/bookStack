@@ -128,11 +128,11 @@
 
     @include('partials.entity-search-form', ['label' => trans('entities.books_search_this')])
 
-    {{--@if($book->tags->count() > 0)--}}
-        {{--<div class="mb-xl">--}}
-            {{--@include('components.tag-list', ['entity' => $book])--}}
-        {{--</div>--}}
-    {{--@endif--}}
+    @if($book->tags->count() > 0)
+        <div class="mb-xl">
+            @include('components.tag-list', ['entity' => $book])
+        </div>
+    @endif
 
     {{--@if(count($bookParentShelves) > 0)--}}
         {{--<div class="actions mb-xl">--}}

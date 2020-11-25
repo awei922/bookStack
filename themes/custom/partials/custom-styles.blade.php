@@ -10,9 +10,6 @@
     }
 
     /* Typography */
-    body{
-        font-size: 16px;
-    }
     pre,
     code {
         font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace !important;
@@ -21,20 +18,11 @@
         white-space:pre-wrap;
     }
 
-    /*Icon*/
-    svg[data-icon="chapter"]{
-        font-size: 1.666em;
-        fill: #ef7c3c;
-    }
-    svg[data-icon="page"]{
-        font-size: 1rem;
-        fill: #0288D1;
-    }
-    .book-tree svg{
-        display: none;
-    }
     /*Content*/
-    .inset-list{
-        display: block;
+    .content-wrap{
+        font-size: 16px;
+    }
+    .card{
+        background-color: transparent !important;
     }
 </style>
