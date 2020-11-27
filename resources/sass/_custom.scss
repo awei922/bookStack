@@ -1,0 +1,39 @@
+//_blocks.scss
+.tri-layout-middle .content-wrap.card {
+  @include lightDark(background-color, transparent, #222);
+  border: none;
+  box-shadow: none;
+}
+
+//_list.scss
+.book-contents .entity-list-item {
+  .icon {
+    display: none;
+  }
+}
+
+.entity-list-item + .chapter-expansion {
+  > .icon {
+    display: none;
+  }
+
+  .chapter-expansion-toggle {
+    padding: $-xs 0;
+    margin-left: -$-l;
+  }
+}
+
+.entity-item-snippet {
+  display: none;
+}
+
+.book-tree .sidebar-page-list {
+  .entity-list-item .icon,
+  &:after, .sub-menu:after {
+    display: none;
+  }
+
+  .chapter-child-menu {
+    margin-left: -$-l;
+  }
+}
