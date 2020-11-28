@@ -23,6 +23,6 @@
         font-size: 16px;
     }
     .card{
-        background-color: transparent !important;
+        /*background-color: transparent !important;*/
     }
 </style>
